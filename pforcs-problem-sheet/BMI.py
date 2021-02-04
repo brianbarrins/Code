@@ -12,7 +12,7 @@
 height = float(input("Please enter your height in Metres: "))
 weight = float(input("Please enter your weight in Kilograms: "))
 #formula = weight * height squared (using**2 in lieu of height * height)
-bmi = weight/ (height**2)
+bmi = weight/(height**2)
 
 #classifications
     #underweight: <18
