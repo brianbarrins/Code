@@ -9,10 +9,12 @@
 
 #create variables for height and weight and BMI
 #use of float to allow for decimals and computations
-height = float(input("Please enter your height in Metres: "))
+height = float(input("Please enter your height in Centimetres: "))
+#convert to metres for calculation
+hm = height*0.01
 weight = float(input("Please enter your weight in Kilograms: "))
 #formula = weight * height squared (using**2 in lieu of height * height)
-bmi = weight/(height**2)
+bmi = weight/(hm**2)
 
 #classifications
     #underweight: <18
