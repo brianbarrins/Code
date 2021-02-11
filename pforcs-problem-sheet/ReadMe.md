@@ -22,3 +22,15 @@ I opened the data in Notepad++ and formatted it better there and saw the structu
 
 Using the bpi as the highest level, I can now pick each of the sub categories and their attributes individually
 Using the rawest form of the float data: rate_float as the output avoids any potential issues with the comma in the normal rate. This would be for potential future proofing/parsing of data
+
+# Week 4 -Number calculator
+# Purpose:
+Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
+
+At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
+
+Have the program end if the current value is one.
+
+# Comments:
+Relatively straight forward while loop acting as the control and exit criteria
+If and elif statements controlling conditional actions for the internal calculations
