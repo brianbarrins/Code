@@ -48,10 +48,10 @@ def othersqrt (number):
 		actual=round(result)	
 		if number > actual:
 			#i=i+0.1
-			print(i,"increasing",actual)
+			#print(i,"increasing",actual)
 		elif number < actual:
 			i=i-1.15
-			print(i,"decreasing",actual)
+			#print(i,"decreasing",actual)
 		elif number == actual:
 			#working backwards by finding two numbers (one number)multiplied by itself that would equal the value
 			x=float(i)
