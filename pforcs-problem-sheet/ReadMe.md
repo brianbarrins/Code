@@ -34,3 +34,15 @@ Have the program end if the current value is one.
 # Comments:
 Relatively straight forward while loop acting as the control and exit criteria
 If and elif statements controlling conditional actions for the internal calculations
+
+# Week 5 - custom square root
+# Purpose:
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+You should create a function called <tt>sqrt</tt> that does this.
+I am asking you to create your own sqrt function and not to use the built in functions x ** .5 or math.sqrt(x)
+I suggest that you look at the newton method at estimating square roots
+
+# Comments:
+Stepped example of the use of Newton's estimation of a squared root applied to a function
+
+Initially started the fucntion with the aim of using another For and If loop to iterate and guess the numbers. This turned out to be much less straight forward than had planned.
