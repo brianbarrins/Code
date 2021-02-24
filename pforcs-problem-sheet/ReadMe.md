@@ -46,3 +46,13 @@ I suggest that you look at the newton method at estimating square roots
 Stepped example of the use of Newton's estimation of a squared root applied to a function
 
 Initially started the fucntion with the aim of using another For and If loop to iterate and guess the numbers. This turned out to be much less straight forward than had planned.
+
+# Week 6 - read file and output search data
+# Purpose:
+Write a program that reads in a text file and outputs the number of e's it contains.
+The program should take the filename from an argument on the command line.
+
+# Comments:
+First attempt was made using very basic and straight forward code
+
+Second attempt had the function built in as well as giving the user to search for any character that they wanted

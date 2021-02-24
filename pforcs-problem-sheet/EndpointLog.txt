@@ -1,0 +1,87 @@
+Jan 12, 2021 1:49:48 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+WARNING: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'allowUnsafeLegacyRenegotiation' to 'false' did not find a matching property.
+Jan 12, 2021 1:49:48 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+WARNING: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'debug' to '0' did not find a matching property.
+INFO: Server initialization in [16,418] milliseconds
+Jan 12, 2021 1:50:02 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [SCM]
+Jan 12, 2021 1:50:02 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: []
+Jan 12, 2021 1:50:12 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying deployment descriptor [C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\tomcat\conf\Catalina\localhost\ROOT.xml]
+Jan 12, 2021 1:50:12 PM org.apache.catalina.startup.SetContextPropertiesRule begin
+WARNING: [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'false' did not find a matching property.
+Jan 12, 2021 1:50:19 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Jan 12, 2021 1:50:19 PM org.apache.tomcat.util.descriptor.web.SecurityConstraint findUncoveredHttpMethods
+SEVERE: For security constraints with URL pattern [/*] only the HTTP methods [MERGE CHECKOUT CHECKIN LOCK VERSION-CONTROL CONNECT DELETE LABEL UPDATE ORDERPATCH BASELINE-CONTROL TRACE MKCOL UNCHECKOUT SEARCH PROPFIND COPY MKWORKSPACE ACL REPORT OPTIONS PUT PATCH MOVE MKACTIVITY PROPPATCH UNLOCK] are covered. All other methods are uncovered.
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: ================== Server Environment ===================
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: os.name = Windows Server 2012 R2
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: os.version = 6.3
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: os.arch = x64
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.version = 11.0.7
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.vendor = Oracle Corporation
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.vm.version = 11.0.7+8-LTS
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.home = C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\jre11
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: catalina.home = C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\tomcat
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: java.user = null
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: user.language = en
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: user.country = GB
+Jan 12, 2021 1:50:20 PM com.sygate.scm.server.util.ServerLogger writeHeader
+SEVERE: scm.server.version = 14.3.1169.0100
+Redirecting System.err to stdout-%g.log...
+Jan 12, 2021 1:50:22 PM com.sygate.scm.server.tools.debug.util.DataCollectorLogger initLogger
+INFO: Data Collector Service Logger initialized ...
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService start
+WARNING: DataCollectorService> start>> Starting Data Collector Service...
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService registerCollector
+WARNING: DataCollectorService> registerCollector>> Register collector: scm.server.debug.data.collector.javathreaddump.enable
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService registerCollector
+WARNING: DataCollectorService> registerCollector>> Register collector: scm.server.debug.data.collector.javaheapdump.enable
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService registerCollector
+WARNING: DataCollectorService> registerCollector>> Register collector: scm.server.debug.data.collector.sepmschema.enable
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService registerCollector
+WARNING: DataCollectorService> registerCollector>> Register collector: scm.server.debug.data.collector.sepmgroupheartbeat.enable
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorWatchService init
+WARNING: DataCollectorWatchService> init>> Registering watch service for directory: etc
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorWatchService init
+WARNING: DataCollectorWatchService> init>> Registering watch service done!
+Jan 12, 2021 1:50:23 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService start
+WARNING: DataCollectorService> start>> Data Collector Service started.
+Jan 12, 2021 1:50:47 PM com.sygate.scm.server.tools.debug.datacollectservice.FileWatchEventHandler isPropertiesFileDetected
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, file name: conf.properties, ignoring this event.
+Jan 12, 2021 1:50:47 PM com.sygate.scm.server.tools.debug.datacollectservice.FileWatchEventHandler isPropertiesFileDetected
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=ryuk, Quarantine.
+Jan 12, 2021 1:50:50 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=revil, Quarantine.
+Jan 12, 2021 1:50:53 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=wannacry, Quarantine.
+Jan 12, 2021 1:50:56 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=maze, Quarantine.
+Jan 12, 2021 1:50:59 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=notpetya, Quarantine.
+Jan 12, 2021 1:51:13 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=notpetya, Quarantine.
+Jan 12, 2021 1:51:18 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=revil, Quarantine.
+Jan 12, 2021 1:51:22 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=emotet, Quarantine.
+Jan 12, 2021 1:51:27 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=risingsun, Quarantine.
+Jan 12, 2021 1:51:29 PM com.sygate.scm.server.tools.debug.datacollectservice.DataCollectorService$1 run
+INFO: FileWatchEventHandler> isPropertiesFileDetected>> Detected non data collector properties file change, filename=wannacry, Quarantine.
+INFO: DataCollectorService> static>> Shutdown data collection service.
