@@ -9,7 +9,7 @@
 
 import re
 
-filename = "./files/sample.txt"
+filename = "./files/access.log"
 urllist = []
 
 with open (filename,"r") as f:
@@ -25,6 +25,7 @@ with open (filename,"r") as f:
 print ("The instances of urls in this file are: {}".format(count))
 print(urllist)
 
+
 #Extra (This is extra work for few marks so think about if it is worth doing)
 
 #Store the URLs as a Dictionary object in the list with the resource and parameter names and values separated out
@@ -35,5 +36,5 @@ for i in urllist:
 	
 	res = re.findall(spliteres,line)
 	param = re.findall(splitparam,line)
-	print (res)
-	print (param)
+#	print (res)
+#	print (param)
