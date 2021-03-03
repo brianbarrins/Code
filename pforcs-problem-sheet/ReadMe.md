@@ -56,3 +56,17 @@ The program should take the filename from an argument on the command line.
 First attempt was made using very basic and straight forward code
 
 Second attempt had the function built in as well as giving the user to search for any character that they wanted
+
+# Week 7 - Regex
+# Purpose:
+Write a program called extract-url.py, that will extract the URLs from an access.log file.
+ie The part of the URL that is stored in the access.log file, complete with the query parameters (I am aware that the host name is not stored in this file, the referring host is)
+The program should store the URLs as strings in a list.
+
+# Comments:
+First part initially tried different ways. Settled on a look forward/look back regex for text between the "T " in GET and POST and the end of the url ending in " HTTP"
+This differentiates from any other random Ts or http in the file.
+Output to list and print list ok.
+
+Struggling to find a logical way to output to dictionary....cannot find a split method good enough
+Trying to use a regex expression to split the list out again before dictionary. Not sure if this will work though.

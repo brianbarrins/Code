@@ -7,7 +7,7 @@
 #Email: G00299967@GMIT.IE
 
 #new
-filename = input ("Please type the name of the file you would like to use: ")
+filename ="./files/" + input ("Please type the name of the file you would like to use: ")
 
 #simpler way without added complexity
 with open (filename,'rt') as f:
