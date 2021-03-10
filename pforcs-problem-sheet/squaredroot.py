@@ -24,21 +24,10 @@ test = squaredroot(float(input("Please input a positive number to calculate it's
 print(test)
 
 
-
-
-
 #Extra coding attempt for my own entertainment and my initial attempt until I saw the Newton's method in the hint!!!
 
 #attempt at solution with for and if loop	
 #using numpy code from: https://stackoverflow.com/questions/51024356/how-can-i-use-floating-point-number-for-increment-in-for-loop-by-python
-
-
-
-
-
-
-
-
 
 def othersqrt (number):
 	#get users input as a float

@@ -7,15 +7,20 @@
 #Student ID: G00299967
 #Email: G00299967@GMIT.IE
 
+#import regex
 import re
 
+#make the file a variable for easier reading
 filename = "./files/access.log"
+#create a url list to store the data
 urllist = []
 
+#using loop from labs
 with open (filename,"r") as f:
 	count = 0
 	for line in f:
 	#using a look forward and look back command for regex
+	#https://www.rexegg.com/regex-lookarounds.html
 		expr = "(?<=T )(.*)(?=HTTP )"
 		url = re.findall(expr, line)
 		#print(url)

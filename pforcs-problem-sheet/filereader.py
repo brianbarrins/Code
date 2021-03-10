@@ -13,8 +13,9 @@ filename ="./files/" + input ("Please type the name of the file you would like t
 with open (filename,'rt') as f:
 	#parse data to data variable
 	data = f.read()
+	#search for both lower and upper case
 	counters = data.count("e") + data.count("E")
-	print ("The number of e's/E's in the file {} is: ".format(filename),counters)
+	print ("The number of e's/E's in the file {} is: {}".format(filename),counters)
 
 #added for user input
 searchfor = input ("Please type what additional character you would like to search for: ")
@@ -22,7 +23,7 @@ searchfor = input ("Please type what additional character you would like to sear
 def customsearch():
 	with open (filename, 'rt') as f:
 		data = f.read()
-		#added option for custom search
+		#added option for custom search using a converted upper and lower case
 		countsearch = data.count(searchfor.upper()) + data.count(searchfor.lower())
 		print ("The number of {}'s in the file {} is: ".format(searchfor,filename),countsearch)
 

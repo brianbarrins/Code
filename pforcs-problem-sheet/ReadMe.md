@@ -70,3 +70,13 @@ Output to list and print list ok.
 
 Struggling to find a logical way to output to dictionary....cannot find a split method good enough
 Trying to use a regex expression to split the list out again before dictionary. Not sure if this will work though.
+
+# Week 8 - Matplot lib
+# Purpose:
+Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
+Some marks will be given for making the plot look nice.
+
+# Comments:
+straight forward attempt using the standard english method of using matplot through structured call outs showing readability
+
+Secondary attempt to illustrate additional options for markers and a logrythmic scale (which didn't really look nice IMO)
