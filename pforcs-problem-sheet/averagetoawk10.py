@@ -12,9 +12,17 @@
 #Student ID: G00299967
 #Email: G00299967@GMIT.IE
 
+#setup logging
+import logging
+logging.basicConfig(filename='./wk10logging.log',
+    filemode ='a',
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s -  %(levelname)s - %(message)s - %(lineno)d ')
+
 #Optional code1
 #pre-populated list option
 #aList = [1,5,65,43,13,14,19,-2,2.7,'a']
+#logging.info("Pre-defined input is being used")
 #user generated list option
 
 aList=[]
@@ -22,16 +30,20 @@ aList=[]
 #Optional code 2
 def checkmanualinput(message):
     n = int(input("Enter how many numbers you would like to use: "))
+    logging.info("User input is being used")
     while True:
         try:
             for i in range(0,n):
                 userInput = int(input(message))
                 #get the positive of the number to avoid negative numbers
                 aList.append(abs(userInput))       
+                logging.info("User input is correct")
         except ValueError:
             #will catch floats and strings and any non integers
+            logging.info("User input is incorrect.")
             print("Not a positive integer! Try again from the start, using only numbers.")
-            aList=[]
+            aList.clear()
+            logging.error("Restarting loop due to user input error")
             continue
         else:
             return userInput 
@@ -67,7 +79,7 @@ def averageTo(list,index):
                 x=int(x)
                 x=abs(x)
                 newlist.append(x)'''
-
+                logging.error("Changing incorrect list object float to int")
                 
             elif x<=0:
                 print("\nThe negative value: '{}' in position: {} is being altered in the list and will be included as a positive integer\n".format(x,i))
@@ -75,21 +87,25 @@ def averageTo(list,index):
                 #raise ValueError("Negative numbers are not allowed!!!\n\nThe negative value: '{}' in position: {} is being altered in the list and will be included as a positive integer\n").format(x,i))
                 '''x=x*-1
                 newlist.append(x)'''
+                logging.error("Changing incorrect list object -number to + int")
             #make positive
             x=abs(x)
             #round it (to deal with floats)
             x=round(x)
             #output to newlist
             newlist.append(x)
+            logging.info("newlist being amended with correct value: {}".format(x))
             #increase counter for indexing position
             i=i+1
 #code here for type error:
     except TypeError:
             print("\nThe string value: '{}' in position: {} is being removed from the list and will not be included in the calculation\n".format(x,i))
+            logging.error("Removing incorrect list object string.")
             aList.remove(x)
 #code here for zero division error:            
     except ZeroDivisionError:
         print("You must enter some numbers first!!\n\nBack to the start and let's try again.")
+        logging.error("Restarting user input due to no number entries or empty number list")
         checkmanualinput("Enter a set of numbers to calculate the average: ")
     #finally:
     #create average and ensure it's initialised
