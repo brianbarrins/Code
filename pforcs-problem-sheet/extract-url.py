@@ -11,7 +11,8 @@
 import re
 
 #make the file a variable for easier reading
-filename = "./files/access.log"
+#filename = "./files/access.log"
+filename = "./files/sample.txt"
 #create a url list to store the data
 urllist = []
 
@@ -36,10 +37,5 @@ print(urllist)
 #Store the URLs as a Dictionary object in the list with the resource and parameter names and values separated out
 for i in urllist:
 
-	spliteres = r'(?<=\&).+?(?=\=)'
-	splitparam = r'(?<=\=).+?(?=\&)'
-	
-	res = re.findall(spliteres,line)
-	param = re.findall(splitparam,line)
-#	print (res)
-#	print (param)
+	head, action, item, other = str(urllist).split("&")
+	print (head)
